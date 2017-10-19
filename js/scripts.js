@@ -12,4 +12,17 @@ $('document').ready(function(){
       }
   };
   checkAge();
+  $('#candidateForm').submit(function(event){
+    if ($('#candidate').val() === 'Sheikh Hasina') {
+      $('.dict').hide();
+      $('.sheikhDiv').show();
+    } else if ($('#candidate').val() === 'Vlad III the Impaler') {
+      $('.dict').hide();
+      $('.vladDiv').show();
+    } else if ($('#candidate').val() === 'Saddam Hussein') {
+      $('.dict').hide();
+      $('.saddamDiv').show();
+    }
+    event.preventDefault();
+  });
 });
