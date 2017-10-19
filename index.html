@@ -12,43 +12,83 @@
     <title></title>
   </head>
   <body>
-    <h1>iLoveToVote.gov</h1>
-    <h2>Info on how to vote</h2>
-    <div class="votingInfo">
-      <h2>Hey you're old enought to vote! - visit these sites to register</h2>
-      <ul>
-        <li>iwannavote.com</li>
-        <li>gimmiemyballot.co.uk</li>
-        <li>ilovemyballot.biz</li>
-      </ul>
-    </div>
-    <div class="under18">
-      <h2>Youre too young! Get out of here you pesky teenager! Click below to get involved in other ways</h2>
-      <ul>
-        <li>imyoungandmad.net</li>
-        <li>myparentswontletmevoteanditmakesmesad.com</li>
-        <li>howcanivoteifim14.angelfire.com</li>
-      </ul>
-    </div>
-    <form id="candidateForm">
-      <div class="form-group">
-        <label for="candidate">Pick your favorite politician/dictator:</label>
-        <select class="form-control" id="candidate">
-          <option>Sheikh Hasina</option>
-          <option>Vlad III the Impaler</option>
-          <option>Saddam Hussein</option>
-        </select>
+    <div class="container">
+      <h1>iLoveToVote.gov</h1>
+      <h2>Info on how to vote</h2>
+      <div class="votingInfo">
+        <h2>Hey you're old enought to vote! - visit these sites to register</h2>
+        <ul>
+          <li>iwannavote.com</li>
+          <li>gimmiemyballot.co.uk</li>
+          <li>ilovemyballot.biz</li>
+        </ul>
       </div>
-      <button type="submit" class="btn btn-danger">Order some wood!</button>
-    </form>
-  <div class="sheikhDiv dict">
-    <p>Sheikh Hasina is a scumbag</p>
-  </div>
-  <div class="vladDiv dict">
-    <p>Vlad is vampire scumbag</p>
-  </div>
-  <div class="saddamDiv dict">
-    <p>Saddam is an idiot scumbag</p>
-  </div>
+      <div class="under18">
+        <h2>Youre too young! Get out of here you pesky teenager! Click below to get involved in other ways</h2>
+        <ul>
+          <li>imyoungandmad.net</li>
+          <li>myparentswontletmevoteanditmakesmesad.com</li>
+          <li>howcanivoteifim14.angelfire.com</li>
+        </ul>
+      </div>
+      <form id="candidateForm">
+        <div class="form-group col-md-6">
+          <label for="candidate">Pick your favorite politician/dictator:</label>
+          <select class="form-control" id="candidate">
+            <option>Sheikh Hasina</option>
+            <option>Vlad III the Impaler</option>
+            <option>Saddam Hussein</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-danger">Order some wood!</button>
+      </form>
+      <div class="sheikhDiv dict">
+        <p>Sheikh Hasina is a scumbag</p>
+      </div>
+      <div class="vladDiv dict">
+        <p>Vlad is vampire scumbag</p>
+      </div>
+      <div class="saddamDiv dict">
+        <p>Saddam is an idiot scumbag</p>
+      </div>
+      <br>
+      <h2>Pick where you live and find out where to vote!</h2>
+      <form id="locationForm">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input id="pdxCheck" class="form-check-input" type="checkbox" value="PDX BABY">
+            Portland, OR
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input id="hoodRiverCheck" class="form-check-input" type="checkbox" value="">
+            Hood River, OR
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input id="greshamCheck" class="form-check-input" type="checkbox" value="">
+            Gresham, OR
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input id="seasideCheck" class="form-check-input" type="checkbox" value=""> <!--Left empty-->
+            Seaside, OR
+          </label>
+        </div>
+      </form>
+      <ul>
+        <li class="pdx">North Portland</li>
+        <li class="seaside">crab shack</li>
+        <li class="gresham">Eastern Gresham</li>
+        <li class="hoodRiver">Southern Hood River</li>
+        <li class="seaside">The beach</li>
+        <li class="pdx">Downtown Portland</li>
+        <li class="gresham">Southern End of uptown Gresham</li>
+        <li class="hoodRiver">Inside the river</li>
+      </ul>
+    </div>
   </body>
 </html>

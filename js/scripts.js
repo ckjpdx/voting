@@ -25,4 +25,28 @@ $('document').ready(function(){
     }
     event.preventDefault();
   });
+  $('#locationForm').click(function(){
+    if ($("input#pdxCheck:checked").length > 0) {
+      $(".pdx").show();
+    } else {
+      $(".pdx").hide();
+    }
+    if ($("input#hoodRiverCheck:checked").length > 0) {
+      $(".hoodRiver").show();
+    } else {
+      $(".hoodRiver").hide();
+    }
+    if ($("input#greshamCheck:checked").length > 0) {
+      $(".gresham").show();
+    } else {
+      $(".gresham").hide();
+    }
+    if ($("input#seasideCheck:checked").length > 0) {
+      $(".seaside").show();
+    } else {
+      $(".seaside").hide();
+    }
+  });
+
+
 });

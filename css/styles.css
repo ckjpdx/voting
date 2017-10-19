@@ -1,11 +1,9 @@
 .under18 {
   display: none;
 }
-
 .votingInfo {
   display: none;
 }
-
 .sheikhDiv {
   display: none;
 }
@@ -13,5 +11,8 @@
   display: none;
 }
 .saddamDiv {
+  display: none;
+}
+li {
   display: none;
 }
