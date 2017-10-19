@@ -81,14 +81,14 @@ $('document').ready(function(){
     }
     var winner = Math.max(vladScore, saddamScore, sheikScore);
     if (vladScore === winner) {
-      //vlad time
+      $('.dateWinner').text('Your love is with Vlad!')
     } else if (saddamScore === winner){
-      //saddadm time
+      $('.dateWinner').text('Your love is with Saddam!')
     } else if (sheikScore === winner) {
-      //sheik time
-    } else {
-      //SHREK TIME;
-    } debugger;
+      $('.dateWinner').text('Your love is with Sheik!')
+    } else { //never reaches this condition
+      $('.dateWinner').text('Your conflicted! Your love is with Shrek!')
+    }
     event.preventDefault();
 
   });

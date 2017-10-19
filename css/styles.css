@@ -16,3 +16,7 @@
 .votingLocations li {
   display: none;
 }
+.dateWinner {
+  color: pink;
+  background: black;
+}
