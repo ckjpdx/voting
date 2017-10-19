@@ -25,7 +25,7 @@
       </div>
       <div class="under18">
         <h2>Youre too young! Get out of here you pesky teenager! Click below to get involved in other ways</h2>
-        <ul>
+        <ul class="under18">
           <li>imyoungandmad.net</li>
           <li>myparentswontletmevoteanditmakesmesad.com</li>
           <li>howcanivoteifim14.angelfire.com</li>
@@ -52,6 +52,39 @@
         <p>Saddam is an idiot scumbag</p>
       </div>
       <br>
+      <!--Dating Area-->
+      <h2>govMatch</h2>
+      <h3>Find out which dictator your soul is mated with</h3>
+      <p>Answer the following to see who would best rate to:</p>
+      <h3>As world leader, I would:</h3>
+      <form id="datingForm">
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Deal with my enemies by:</label>
+          <select class="form-control" id="question1">
+            <option value="vlad" id="vlad1">...impaling them</option>
+            <option value="saddam" id="saddam1">...gassing them</option>
+            <option value="sheik" id="sheik1">...assassinating them</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">wear the latest fashion of</label>
+          <select class="form-control" id="question2">
+            <option value="vlad" id="vlad2">...chainmail/partial plate armor</option>
+            <option value="saddam" id="saddam2">...military sweatpants</option>
+            <option value="sheik" id="sheik2">...lungi / shari</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">spend my money on</label>
+          <select class="form-control" id="question3">
+            <option value="vlad" id="vlad3">lots of horses and scimitars, and torture devices</option>
+            <option value="saddam" id="saddam3">romance novels and a nice glass of merlot</option>
+            <option value="sheik" id="sheik3">beanie babies</option>
+          </select>
+        </div>
+        <button type="submit" name="button" value="Date Me!">Date me!</button>
+      </form>
+      <!--End Dating Area-->
       <h2>Pick where you live and find out where to vote!</h2>
       <form id="locationForm">
         <div class="form-check">
@@ -79,7 +112,7 @@
           </label>
         </div>
       </form>
-      <ul>
+      <ul class="votingLocations">
         <li class="pdx">North Portland</li>
         <li class="seaside">crab shack</li>
         <li class="gresham">Eastern Gresham</li>

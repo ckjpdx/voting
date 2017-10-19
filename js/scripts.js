@@ -25,7 +25,7 @@ $('document').ready(function(){
     }
     event.preventDefault();
   });
-  $('#locationForm').click(function(){
+  $('#locationForm').submit(function(event){
     if ($("input#pdxCheck:checked").length > 0) {
       $(".pdx").show();
     } else {
@@ -47,6 +47,49 @@ $('document').ready(function(){
       $(".seaside").hide();
     }
   });
+  var vladScore = 0;
+  var saddamScore = 0;
+  var sheikScore = 0;
 
+  $("#datingForm").submit(function(event) {
+    if ($("#question1").val() === "vlad") {
+      vladScore++;
+    }
+    if ($("#question1").val() === "saddam") {
+      saddamScore++;
+    }
+    if ($("#question1").val() === "sheik") {
+      sheikScore++;
+    }
+    if ($("#question2").val() === "vlad") {
+      vladScore++;
+    }
+    if ($("#question2").val() === "saddam") {
+      saddamScore++;
+    }
+    if ($("#question2").val() === "sheik") {
+      sheikScore++;
+    }
+    if ($("#question3").val() === "vlad") {
+      vladScore++;
+    }
+    if ($("#question3").val() === "saddam") {
+      saddamScore++;
+    }
+    if ($("#question3").val() === "sheik") {
+      sheikScore++;
+    }
+    var winner = Math.max(vladScore, saddamScore, sheikScore);
+    if (vladScore === winner) {
+      //vlad time
+    } else if (saddamScore === winner){
+      //saddadm time
+    } else if (sheikScore === winner) {
+      //sheik time
+    } else {
+      //SHREK TIME;
+    } debugger;
+    event.preventDefault();
 
+  });
 });
