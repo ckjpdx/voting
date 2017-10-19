@@ -92,4 +92,22 @@ $('document').ready(function(){
     event.preventDefault();
 
   });
+
+  $("#triForm").submit(function(event) {
+    var tri1 = parseInt($("input#triangleside1").val());
+    var tri2 = parseInt($("input#triangleside2").val());
+    var tri3 = parseInt($("input#triangleside3").val());
+    if (isNaN(tri1) || isNaN(tri2) || isNaN(tri3)) {
+        alert('Why are you being difficult? Only enter NUMBERS');
+      } else if (tri1 + tri2 <= tri3 || tri1 + tri3 <= tri2 || tri2 + tri3 <= tri1) {
+        alert('Not a triangle. Try again bozo!');
+      } else if (tri1 === tri2 && tri1 === tri3) {
+        $(".triWinner").text("You are a Equilateral triangle");
+      } else if (tri1 === tri2 || tri1 === tri3 || tri2 === tri3) {
+        $(".triWinner").text("You are a Isosceles triangle");
+      } else {
+        $(".triWinner").text("You are a Scalene triangle");
+      }
+    event.preventDefault();
+  });
 });
